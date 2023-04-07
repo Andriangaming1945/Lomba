@@ -1,0 +1,72 @@
+body {
+  background-color: pink;
+}
+
+.menu {
+  font-family: tahoma;
+  font-weight: bold;
+  height: 70px;
+  width: 100%;
+  background: rgb(249, 31, 162);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+label {
+  font-family: comic sans ms bold;
+  font-size: 20pt;
+  color: black;
+  background-color: white;
+  box-shadow: inset 0px 0px 5px #000;
+  margin: 10px;
+  padding: 5px;
+  float: left;
+}
+
+.menu ul {
+  margin: 0px;
+  padding: 5px;
+  background: none;
+  display: block;
+  float: right;
+}
+
+.menu ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.menu ul li a:hover {
+  display: block;
+  color: red;
+  background: white;
+  box-shadow: inset 0px 0px 5px #000;
+}
+
+.menu ul li .dropdown {
+  display: none;
+}
+
+.menu ul li:hover .dropdown {
+  display: block;
+  background: whitesmoke;
+  box-shadow: inset;
+  position: absolute;
+  padding: 10px;
+}
+
+.menu ul li:hover .dropdown li {
+  display: block;
+}
+
+.menu ul li:hover .dropdown li a:hover {
+  background: blueviolet;
+  box-shadow: inset 0px 0px 5px #000;
+}
